@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Link } from "react-router-dom";
 
 class NavBar extends React.Component {
     render() {
@@ -8,11 +9,11 @@ class NavBar extends React.Component {
                     <nav id="navbar">
                         <img className="logo-img" alt="" src="" />
                         <div className="container">
-                            <h1>PFRAGRANCE</h1>
+                            <h1>TechCrunch</h1>
                             <ul>
                                 <li><Link exact={true} to="/index">Home</Link></li>
                                 <li><Link exact={true} to="/article">Articles</Link></li>
-                                <li><Link exact={true} to="/events">Events and Advertise</Link></li>
+                                <li><Link exact={true} to="/events">Events and Newsletter</Link></li>
                                 <li><Link exact={true} to="/contact">Contact</Link></li>
                             </ul>
                         </div>
