@@ -3,20 +3,57 @@ import React from 'react';
 class Footer extends React.Component {
     render() {
         return (
-            <div>
-                <footer id="main-footer">
-                    <p>TechCrunch &copy; 2020 | All Rights Reserved</p>
-                    <a href="https://www.facebook.com/"><img className="social"
-                        src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png"
-                        alt="facebook logo" /></a>
-                    <a href="https://www.instagram.com/"><img className="social"
-                        src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png"
-                        alt="instagram logo" /></a>
-                    <a href="https://twitter.com/?lang=en"><img className="social"
-                        src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-512.png"
-                        alt="twitter logo" /></a>
-                </footer>
-            </div>
+            <footer>
+                <section className="footerContainer">
+                    <div className="quickLinks">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a className="footer-nav" href="#">TechCrunch</a></li>
+                            <li><a className="footer-nav" href="#">Event</a></li>
+                            <li><a className="footer-nav" href="#">Advertise</a></li>
+                            <li><a className="footer-nav" href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="quickLinks">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a className="footer-nav" href="#">Private Policy</a></li>
+                            <li><a className="footer-nav" href="#">Terms of Service</a></li>
+                            <li><a className="footer-nav" href="#">Extra Crunch Terms</a></li>
+                            <li><a className="footer-nav" href="#">Privacy dashboard</a></li>
+                            <li><a className="footer-nav" href="#">Code of Conduct</a></li>
+                        </ul>
+                    </div>
+                    <div class="quickLinks">
+                        <h3>Read Anywhere</h3>
+                        <ul>
+                            <li><a className="footer-nav" href="#">App Store</a></li>
+                            <li><a className="footer-nav" href="#">Google Play</a></li>
+                        </ul>
+                    </div>
+                    <div class="quickLinks">
+                        <h3>International</h3>
+                        <ul>
+                            <li><a className="footer-nav" href="#">Japan</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/"><img className="socialmedia" src="img/facebook.webp"
+                            alt="facebook logo" /></a>
+                        <a href="https://youtube.com/"><img className="socialmedia" src="img/youtubelogo.webp"
+                            alt="youtube logo" /></a>
+                        <a href="https://linkedin.com/"><img className="socialmedia" src="img/linkedinlogo.webp"
+                            alt="linkedin logo" /></a>
+                        <a href="https://twitter.com/"><img className="socialmedia" src="img/twitterlogo.webp"
+                            alt="twitter logo" /></a>
+                        <a href="https://www.instagram.com/"><img className="socialmedia" src="img/instagramlogo.webp"
+                            alt="instagram logo" /></a>
+                    </div>
+                </section>
+                <div className="copyright">
+                    <p>&copy; 2013-2020 Verizon Media.All rights reserved.Powered by WordPress VIP.</p>
+                </div>
+            </footer>
         )
     }
 }
