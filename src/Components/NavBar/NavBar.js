@@ -11,10 +11,10 @@ class NavBar extends React.Component {
                         <div className="container">
                             <h1>TechCrunch</h1>
                             <ul>
-                                <li><Link exact={true} to="/index">Home</Link></li>
-                                <li><Link exact={true} to="/article">Articles</Link></li>
-                                <li><Link exact={true} to="/events">Events and Advertise</Link></li>
-                                <li><Link exact={true} to="/contact">Contact</Link></li>
+                                <li><Link exact={true} to="/">Home</Link></li>
+                                <li><Link exact={true} to="/Articles">Articles</Link></li>
+                                <li><Link exact={true} to="/Events">Events and Advertise</Link></li>
+                                <li><Link exact={true} to="/Contact">Contact</Link></li>
                             </ul>
                         </div>
                     </nav>

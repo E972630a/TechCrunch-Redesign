@@ -1,6 +1,5 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar'
-import Footer from '../Footer/Footer';
+
 
 
 class HomePage extends React.Component {
