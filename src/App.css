@@ -1,8 +1,8 @@
-* {
+  /* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /* NavBar */
 #navbar {
@@ -164,12 +164,17 @@
   margin-left: 120px;
   background: linear-gradient(to right, #00A562 , #00B100);
 }
+.events-card-button:hover {
+  background: white;
+  color: #00B100;
+}
 
 .column {
   float: left;
   width: 25%;
   padding: 0 10px;
-margin-left: 120px;
+  margin-left: 120px;
+  margin-bottom: -18%;
 }
 
 .events-card {
@@ -198,14 +203,10 @@ footer{
 }
 
 .quickLinks {
-  float: left;
+  float: left; 
   text-align: start;
 }
 
-.quickLinks ul {
-  list-style: none;
-  text-decoration: none;
-}
 .socialmedia {
   width: 64px;
   text-align: center;
@@ -214,7 +215,12 @@ footer{
 
 .footer-nav {
   color: rgb(29, 28, 28);
+  text-decoration: none;
+  list-style: none;
 }
+
+
 .copyright p {
   text-align: center;
-}
+  margin-top: 20px;
+} 
