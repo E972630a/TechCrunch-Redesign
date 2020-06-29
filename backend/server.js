@@ -1,8 +1,8 @@
-const express = require('express');
-const cors = require('cors');
+const express = require('./node_modules/express');
+const cors = require('./node_modules/cors/lib');
 const mongoose = require('mongoose'); //helps connect to outr mongoDB database
 
-require('dotenv').config(); //configures to have environment variables in dotenv file
+require('./node_modules/dotenv/types').config(); //configures to have environment variables in dotenv file
 
 
 //how to create the express server
