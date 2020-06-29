@@ -1,6 +1,6 @@
 import React from 'react';
-import Modal from "./Component/Modal/Modal";
-import ContactSection from "../src/Component/ContactSection"
+import Modal from "../Modal/Modal";
+import ContactSection from "../ContactSection"
 
 class ContactSignUp extends React.Component {
     constructor() {

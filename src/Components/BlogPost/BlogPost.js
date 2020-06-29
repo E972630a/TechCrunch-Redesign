@@ -1,21 +1,28 @@
-import React from "react";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import data from "../data/post.json";
+import '../BlogPost/blogPost.css'
 
-class BlogPost extends React.Component {
+export default class CreateComments extends Component {
+
   render() {
-    {
+      
+      
       return (
         <div>
           <div className="square__post">
-            {data.map(function (data, i) {
+            
+            {data.map((data, i) => {
               return (
                 <div key={i}>
                   <h2>{data.title}</h2>
                   <p>{data.date}</p>
                   <p>{data.content}</p>
+                  <Link to={data.link}><button type="button" onClick="refreshPage()">More info</button></Link>
                 </div>
               );
             })}
+            
           </div>
 
           <div className="recent__section">
@@ -27,11 +34,11 @@ class BlogPost extends React.Component {
                 </div>
               );
             })}
+            
           </div>
         </div>
       );
-    }
+    
   }
 }
 
-export default BlogPost;
