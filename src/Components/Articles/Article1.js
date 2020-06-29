@@ -94,6 +94,7 @@ commentList() {
               return (
                 <div key={i} >
                   <h2>{data.title}</h2>
+              <img src={data.img} alt="aws logo"/>
                   <p>{data.date}</p>
                   <p>{data.content}</p>
                   </div>
