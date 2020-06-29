@@ -28,7 +28,7 @@ class ContactSignUp extends React.Component {
       <div className="background">
         <div className="contact__forms">
         <form className="signup">
-          <h1>Log In</h1>
+          <h1 className="log-in">Log In</h1>
           <label>
             UserName/Email:
                   <input type="text" name="name" />

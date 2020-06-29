@@ -17,11 +17,11 @@
     margin-right: 7%;
   }
   
-  h3 {
+  .recent__post {
     background-color: rgb(19, 146, 19);
     padding: 5px;
   }
   
-  h4 {
+  .recent__title {
     border-bottom: black solid;
   }

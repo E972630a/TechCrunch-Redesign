@@ -17,24 +17,24 @@ class Footer extends React.Component {
                     <div class="quickLinks">
                         <h3>Legal</h3>
                         <ul>
-                            <li><a className="footer-nav" href="#">Private Policy</a></li>
-                            <li><a className="footer-nav" href="#">Terms of Service</a></li>
-                            <li><a className="footer-nav" href="#">Extra Crunch Terms</a></li>
-                            <li><a className="footer-nav" href="#">Privacy dashboard</a></li>
-                            <li><a className="footer-nav" href="#">Code of Conduct</a></li>
+                            <li><a className="footer-nav" href="https://www.verizonmedia.com/policies/xw/en/verizonmedia/privacy/intl/index.html">Private Policy</a></li>
+                            <li><a className="footer-nav" href="https://www.verizonmedia.com/policies/xw/en/verizonmedia/terms/otos/index.html">Terms of Service</a></li>
+                            <li><a className="footer-nav" href="https://techcrunch.com/pages/extra-crunch-terms-of-service/">Extra Crunch Terms</a></li>
+                            <li><a className="footer-nav" href="https://www.verizonmedia.com/policies/us/en/verizonmedia/privacy/dashboard/index.html">Privacy dashboard</a></li>
+                            <li><a className="footer-nav" href="https://techcrunch.com/pages/code-of-conduct/">Code of Conduct</a></li>
                         </ul>
                     </div>
                     <div class="quickLinks">
                         <h3>Read Anywhere</h3>
                         <ul>
-                            <li><a className="footer-nav" href="#">App Store</a></li>
-                            <li><a className="footer-nav" href="#">Google Play</a></li>
+                            <li><a className="footer-nav" href="https://apps.apple.com/us/app/techcrunch/id526058642">App Store</a></li>
+                            <li><a className="footer-nav" href="https://play.google.com/store/apps/details?id=com.aol.mobile.techcrunch">Google Play</a></li>
                         </ul>
                     </div>
                     <div class="quickLinks">
                         <h3>International</h3>
                         <ul>
-                            <li><a className="footer-nav" href="#">Japan</a></li>
+                            <li><a className="footer-nav" href="https://jp.techcrunch.com/?_ga=2.12138807.24557200.1593436256-944818732.1592413903">Japan</a></li>
                         </ul>
                     </div>
                     <div>

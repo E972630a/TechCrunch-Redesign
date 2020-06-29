@@ -6,64 +6,26 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
-                <div className="showcase"></div>
+                <div className="showcase" />
                 <div className="article-container">
-                    <div className="grid-item">
+                    <a href="/article1"><div className="grid-item">
                         <img className="article-img" src="img/AWSLogo.jpg" alt="AWS logo" />
                         <h2 id="article-title">Why AWS built a no-code tool</h2>
                         <h4 id="article-writer">Frederic Lardinois</h4>
                         <h5 id="article-date">7:36 pm EDT•June 24, 2020</h5>
-                    </div>
-                    <div className="grid-item">
-                        <img className="article-img-even" src="img/scooterimage.jpg" alt="a girl on a scooter" />
-                        <h2 id="article-title-even">New York City could have an e-scooter pilot program by March</h2>
-                        <h4 id="article-writer-even">Kirsten Korosec</h4>
-                        <h5 id="article-date-even">6:41 pm EDT•June 24, 2020</h5>
-                    </div>
-                    <div className="grid-item">
+                    </div></a>
+                    <a href="/article2"><div className="grid-item">
+                        <img className="article-img" src="img/scooterimage.jpg" alt="a girl on a scooter" />
+                        <h2 id="article-title">New York City could have an e-scooter pilot program by March</h2>
+                        <h4 id="article-writer">Kirsten Korosec</h4>
+                        <h5 id="article-date">6:41 pm EDT•June 24, 2020</h5>
+                    </div></a>
+                    <a href="/article3"><div className="grid-item">
                         <img className="article-img" src="img/Loupedeck-CT-07.jpg" alt="a device with buttons" />
                         <h2 id="article-title">The Loupedeck CT is a fantastic, flexible editing console for Mac and PC</h2>
                         <h4 id="article-writer">Darrell Etherington</h4>
                         <h5 id="article-date">5:17 pm EDT•June 24, 2020</h5>
-                    </div>
-                    <div className="grid-item">
-                        <img className="article-img-even" src="img/GettyImages-508482219.jpg" alt="puzzle of people's faces" />
-                        <h2 id="article-title-even">Biased AI perpetuates racial injustice</h2>
-                        <h4 id="article-writer-even">Miriam Vogel</h4>
-                        <h5 id="article-date-even">5:04 pm EDT•June 24, 2020</h5>
-                    </div>
-                    <div className="grid-item">
-                        <img className="article-img" src="img/someonewriting.png" alt="a notebook being wrote on" />
-                        <h2 id="article-title">IPOs that could happen soon, cannot happen soon enough</h2>
-                        <h4 id="article-writer">Alex Wilhelm</h4>
-                        <h5 id="article-date">4:45 pm EDT•June 24, 2020</h5>
-                    </div>
-                    <div className="grid-item">
-                        <img className="article-img-even" src="img/united-states-capitol-two-tone.jpg" alt="united states capitol" />
-                        <h2 id="article-title-even">PACT Act takes on internet platform content rules with ‘a scalpel rather
-                    than a jackhammer’</h2>
-                        <h4 id="article-writer-even">Devin Coldewey</h4>
-                        <h5 id="article-date-even">4:24 pm EDT•June 24, 2020</h5>
-                    </div>
-                    <div className="grid-item">
-                        <img className="article-img" src="img/awsbuilding.jpg" alt="AWS building" />
-                        <h2 id="article-title">AWS launches Amazon Honeycode, a no-code mobile and web app builder</h2>
-                        <h4 id="article-writer">Frederic Lardinois</h4>
-                        <h5 id="article-date">4:12 pm EDT•June 24, 2020</h5>
-                    </div>
-                    <div className="grid-item">
-                        <img className="article-img-even" src="img/ps4-20th-console-all.jpg" alt="white PS4 gaming system" />
-                        <h2 id="article-title-even">Sony will now pay researchers $50,000+ for critical PS4 bugs</h2>
-                        <h4 id="article-writer-even">Greg Kumparak</h4>
-                        <h5 id="article-date-even">4:02 pm EDT•June 24, 2020</h5>
-                    </div>
-                    <div className="grid-item">
-                        <img className="article-img" src="img/cryptoimage.jpg" alt="crypto" />
-                        <h2 id="article-title">Crypto Startup School: The legal and fundraising implications of crypto tokens
-                </h2>
-                        <h4 id="article-writer">Zoran Basich</h4>
-                        <h5 id="article-date">3:00 pm EDT•June 24, 2020</h5>
-                    </div>
+                    </div></a>
                 </div>
                 <div className="container">
                     <div className="card" style={{ width: 18 + 'rem' }}>
