@@ -8,10 +8,10 @@ class Footer extends React.Component {
                     <div className="quickLinks">
                         <h3>About</h3>
                         <ul>
-                            <li><a className="footer-nav" href="#">TechCrunch</a></li>
-                            <li><a className="footer-nav" href="#">Event</a></li>
-                            <li><a className="footer-nav" href="#">Advertise</a></li>
-                            <li><a className="footer-nav" href="#">Contact Us</a></li>
+                            <li><a className="footer-nav" href="/">TechCrunch</a></li>
+                            <li><a className="footer-nav" href="/events">Event</a></li>
+                            <li><a className="footer-nav" href="/events">Advertise</a></li>
+                            <li><a className="footer-nav" href="/contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="quickLinks">
@@ -38,7 +38,7 @@ class Footer extends React.Component {
                         </ul>
                     </div>
                     <div>
-                        <a href="https://www.facebook.com/"><img className="socialmedia" src="img/facebook.webp"
+                        <a href="https://www.facebook.com/"><img className="socialmedia" src="img/facebooklogo.webp"
                             alt="facebook logo" /></a>
                         <a href="https://youtube.com/"><img className="socialmedia" src="img/youtubelogo.webp"
                             alt="youtube logo" /></a>

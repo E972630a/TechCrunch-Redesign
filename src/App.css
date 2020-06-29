@@ -6,28 +6,24 @@
 
 /* NavBar */
 #navbar {
-  background: radial-gradient(circle, rgba(0,165,98,1) 0%, rgba(0,177,0,1) 35%);
+  background: radial-gradient(circle, rgba(0,165,98,1) 0%, rgba(0,177,0,1) 55%);
   color: #000000;
   overflow: auto;
 }
-#navbar a, ul {
+.nav-container a, ul {
   color: black;
   font-size: 20px;
   list-style: none;
   float: right;
+  text-decoration: none;
+  margin: 10px;
 }
 #navbar h1 {
   float: left;
-  padding-top: 20px;
+  padding: 20px;
+  margin-left: 50px;
 }
-#navbar ul li {
-  float: left;
-}
-#navbar ul li a {
-  display: block;
-  padding: 25px;
-  text-align: center;
-}
+
 #navbar ul li a:hover, 
 #navbar ul li a.current {
   background: white;
@@ -144,21 +140,44 @@
   font-size: 30px;
 }
 
-.advertise-container button {
+.events-button {
+  text-decoration: none;
+  list-style: none;
+  color: white;
   width: 20%;
   padding: 20px;
   font-size: 30px;
   margin-top: 10px;
-  color: white;
   background: linear-gradient(to right, #00A562 , #00B100);
+  
 }
 .advertise-image{
   float: right;
   width: 40%;
 }
 
-.event-button {
-  color: yellowgreen;
+.events-card-button{
+  width: 40%;
+  padding: 10px;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 120px;
+  background: linear-gradient(to right, #00A562 , #00B100);
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+margin-left: 120px;
+}
+
+.events-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: start;
+  background-color: #f1f1f1;
+  height: 700px;
 }
 
 /* Footer */
@@ -166,7 +185,7 @@ footer{
   margin: auto;
   background: radial-gradient(circle, rgba(0,165,98,1) 0%, rgba(0,177,0,1) 35%);
   position: relative;
-  margin-top: 550px;
+  margin-top: 500px;
   padding: 20px;
 }
 
@@ -190,6 +209,7 @@ footer{
 .socialmedia {
   width: 64px;
   text-align: center;
+  padding: 5px;
 }
 
 .footer-nav {
@@ -197,30 +217,4 @@ footer{
 }
 .copyright p {
   text-align: center;
-}
-
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-  margin-top: 10%;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.events-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: start;
-  background-color: #f1f1f1;
-  height: 800px;
 }
