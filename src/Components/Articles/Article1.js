@@ -5,10 +5,17 @@ import '../BlogPost/blogPost.css'
 import axios from 'axios';
 
 const Comment = props => (
+<<<<<<< HEAD
   <tr>
     <td>{props.comment.comment_name}</td>
     <td>{props.comment.comment_description}</td>
   </tr>
+=======
+  <div className='commentbox'>
+    <p className='commentname'>{props.comment.comment_name1}</p>
+    <p className='commentdescription'>{props.comment.comment_description1}</p>
+  </div>
+>>>>>>> origin/joseperezbranch
 )
 
 export default class CreateComments extends Component {
@@ -16,20 +23,31 @@ export default class CreateComments extends Component {
   constructor(props) {
     super(props);
     //binding state objects to 'this' since we are dealing with methods
+<<<<<<< HEAD
     this.onChangeCommentName = this.onChangeCommentName.bind(this);
     this.onChangeCommentDescription = this.onChangeCommentDescription.bind(this);
+=======
+    this.onChangeCommentName1 = this.onChangeCommentName1.bind(this);
+    this.onChangeCommentDescription1 = this.onChangeCommentDescription1.bind(this);
+>>>>>>> origin/joseperezbranch
     this.onSubmit = this.onSubmit.bind(this);
 
 
     //setting and assigning state
     this.state = {
+<<<<<<< HEAD
       comment_name: '',
       comment_description: '',
+=======
+      comment_name1: '',
+      comment_description1: '',
+>>>>>>> origin/joseperezbranch
       comments: []
 
     }
   }
   //methods to update state properties
+<<<<<<< HEAD
   onChangeCommentName(e) {
     this.setState({
       comment_name: e.target.value
@@ -38,6 +56,16 @@ export default class CreateComments extends Component {
   onChangeCommentDescription(e) {
     this.setState({
       comment_description: e.target.value
+=======
+  onChangeCommentName1(e) {
+    this.setState({
+      comment_name1: e.target.value
+    });
+  }
+  onChangeCommentDescription1(e) {
+    this.setState({
+      comment_description1: e.target.value
+>>>>>>> origin/joseperezbranch
     });
   }
 
@@ -50,16 +78,26 @@ export default class CreateComments extends Component {
     console.log(`Comment Description: ${this.state.comment_description}`);
 
     const newComment = {
+<<<<<<< HEAD
       comment_name: this.state.comment_name,
       comment_description: this.state.comment_description
+=======
+      comment_name1: this.state.comment_name1,
+      comment_description1: this.state.comment_description1
+>>>>>>> origin/joseperezbranch
     };
     //sending POST request to endpoint using axios, endpoint expects new comment in JSON 
     axios.post('http://localhost:4000/comments/add', newComment)
       .then(res => console.log(res.data))
 
     this.setState({
+<<<<<<< HEAD
       comment_name: '',
       comment_description: ''
+=======
+      comment_name1: '',
+      comment_description1: ''
+>>>>>>> origin/joseperezbranch
     })
 
   }
@@ -114,25 +152,41 @@ export default class CreateComments extends Component {
             );
           })}
           <h3>Comments</h3>
+<<<<<<< HEAD
           <p> {this.commentList()}</p>
 
           <h3>Create Comment</h3>
+=======
+          <table> {this.commentList()}</table>
+
+          <h3 className="createcomment">Create Comment</h3>
+>>>>>>> origin/joseperezbranch
 
           <form onSubmit={useThis.onSubmit}>
             <div className="form-group">
               <label>Name:</label>
               <input type="text"
                 className="form-control"
+<<<<<<< HEAD
                 value={this.state.comment_name}
                 onChange={this.onChangeCommentName}
+=======
+                value={this.state.comment_name1}
+                onChange={this.onChangeCommentName1}
+>>>>>>> origin/joseperezbranch
               />
             </div>
             <div className="form-group">
               <label>Comment:</label>
               <input type="text"
                 className="form-control"
+<<<<<<< HEAD
                 value={this.state.comment_description}
                 onChange={this.onChangeCommentDescription}
+=======
+                value={this.state.comment_description1}
+                onChange={this.onChangeCommentDescription1}
+>>>>>>> origin/joseperezbranch
               />
             </div>
             <div className="form-group">

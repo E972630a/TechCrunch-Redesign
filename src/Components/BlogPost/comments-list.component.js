@@ -24,7 +24,7 @@ componentDidMount() {
 // mapping comments 
 commentList() {
     return this.state.comments.map(function(currentComment, i){
-        return <Todo todo={currentComment} key={i} />;
+        return <Comment comment={currentComment} key={i} />;
     })
 }
 
