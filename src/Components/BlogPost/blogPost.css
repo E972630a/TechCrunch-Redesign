@@ -9,12 +9,14 @@
     margin: auto;
     box-shadow: 0 2px 4px 0 rgba(181,181,181,.7);
     padding: 5px;
+    margin-top: 5%;
+    margin-bottom: -16%;
   }
   
   .recent__section{
     float: right;
-    margin-top: -25%;
-    margin-right: 7%;
+    margin-top: -215%;
+    margin-right: 5%;
   }
   
   .recent__post {

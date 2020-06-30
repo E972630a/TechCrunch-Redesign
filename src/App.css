@@ -12,7 +12,7 @@
 }
 .nav-container a, ul {
   color: black;
-  font-size: 20px;
+  font-size: 1.5rem;
   list-style: none;
   float: right;
   text-decoration: none;
@@ -41,11 +41,12 @@
   grid-template-columns: auto auto auto;
   padding: 10px;
   margin: 3%;
-  max-width: 75%
+  max-width: 75%;
+  margin-left: 12%;
 }
 .grid-item {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px 0 rgba(11, 159, 28, 0.2);
+  background-color: white;
   height: 700px;
   padding: 10px;
   text-decoration: none;
@@ -88,12 +89,12 @@
 }
 
 .hero-text h1 {
-  font-size: 90px;
+  font-size: 5.5rem;
   font-weight: bold;
 }
 
 .hero-text p {
-  font-size: 30px;
+  font-size: 1.8rem;
   margin-top: 20px;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;;
 }
@@ -110,23 +111,23 @@
 }
 
 .advertise-container .advertise-calendar {
-  font-size: 100px;
+  font-size: 7rem;
   font-weight: bold;
   border-bottom: 5px solid #00A562;
   display: inline-block;
 }
 
 .advertise-container  li {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .events-button {
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: black;
   width: 20%;
   padding: 20px;
-  font-size: 30px;
+  font-size: 2rem;
   margin-top: 10px;
   background: linear-gradient(to right, #00A562 , #00B100);
   
@@ -139,12 +140,17 @@
 .events-card-button{
   width: 40%;
   padding: 10px;
-  font-size: 30px;
+  font-size: 1.8rem;
   margin-top: 20px;
   margin-left: 120px;
   background: linear-gradient(to right, #00A562 , #00B100);
 }
-.events-card-button:hover {
+
+.events-card-button:hover{
+  background: white;
+  color: #00B100;
+}
+.events-button:hover {
   background: white;
   color: #00B100;
 }
@@ -202,5 +208,5 @@ footer{
 
 .copyright p {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 4%;
 } 
