@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![ImgName](https://1businessworld.com/wp-content/uploads/2019/12/03/techcrunch-logo.png)
 
-## Available Scripts
+ 
+The TechCrunch-Redesign project delivers what all technology enthusiasts look for when searching for tech business news. Simplicity and right to it. With technology changing every second there is always news but how could you possibly indulge in the content when you're overloaded with information. Our Website delivers simplicity and captivating information for the visitor to enjoy and share their thoughts. Our sleek design makes it easy for any visitor to enjoy the experience of reading in a quiet environment on the web. Our main goal is to keep the reader calm and not overloaded with info. Sign up today to get your personalized news content tailored to your liking. We are the new Tech Crunch, without the Crunch. 
 
-In the project directory, you can run:
+## Want in on the Crunch? 
 
-### `npm start`
+Clone or download this repo onto your local machine. Once repo is downloaded/cloned, open in your preferred code editor and run `npm install` inside the project folder terminal/commandline  to begin downloading all necessary dependencies to help run the program.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm install
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Getting Started
+After you have installed all of the dependencies that are needed for this project, run `npm start` in your terminal/commandline tool. This will start the React app server, opening the application on your local host. After your local server is running for the application you will need to open a new terminal/commandline within your folder and navigate to the src/backend folder and run `nodemon server` to begin running the server.
+```bash
+npm start
+nodemon server
+```
 
-### `npm test`
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built Using
+- [React](https://reactjs.org/)
+- [NodeJS](https://nodejs.org/en/)
+- [jwt](https://jwt.io/)
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [@hapi/joi](https://www.npmjs.com/package/@hapi/joi)
+- [Express](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/docs/)
 
-### `npm run build`
+## Authors
+- Esau Augilar Osuna
+- Cody Gilliam
+- Jose Hernandez
+- Kelvin Melendez
+- Jose Perez
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
