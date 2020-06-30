@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //connect MongoDB using Mongoose
-mongoose.connect("mongodb+srv://Jrez300:Pumas940@cluster0-8bxaw.mongodb.net/Cluster0?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://Techcrunchmongodb:Mongodb@cluster0-52z5g.mongodb.net/Cluster0?retryWrites=true&w=majority",{ useNewUrlParser: true,  useUnifiedTopology: true });
 const connection = mongoose.connection;
 
 connection.once('open', function () {
