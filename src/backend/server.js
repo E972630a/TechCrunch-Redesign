@@ -1,3 +1,5 @@
+const dotenv = require("dotenv")
+dotenv.config()
 //framework for Node.js
 const express = require('express');
 const app = express();
@@ -17,14 +19,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 //connect MongoDB using Mongoose
-<<<<<<< HEAD
-mongoose.connect("mongodb+srv://Jrez300:Pumas940@cluster0-8bxaw.mongodb.net/Cluster0?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true,  useUnifiedTopology: true });
 const connection = mongoose.connection;
 
-connection.once('open', function () {
-=======
-mongoose.connect("mongodb+srv://Techcrunchmongodb:Mongodb@cluster0-52z5g.mongodb.net/Cluster0?retryWrites=true&w=majority",{ useNewUrlParser: true,  useUnifiedTopology: true });
-const connection = mongoose.connection;
 
 
 connection.once('open', function(){
