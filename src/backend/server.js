@@ -20,7 +20,8 @@ app.use(bodyParser.json());
 mongoose.connect("mongodb+srv://Techcrunchmongodb:Mongodb@cluster0-52z5g.mongodb.net/Cluster0?retryWrites=true&w=majority",{ useNewUrlParser: true,  useUnifiedTopology: true });
 const connection = mongoose.connection;
 
-connection.once('open', function () {
+
+connection.once('open', function(){
     console.log("MongoDB database connection established successfully")
 })
 //adding endpoint delivering all comments

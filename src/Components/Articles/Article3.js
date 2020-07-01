@@ -5,10 +5,10 @@ import '../BlogPost/blogPost.css'
 import axios from 'axios';
 
 const Comment = props => (
-  <tr>
-    <td>{props.comment.comment_name}</td>
-    <td>{props.comment.comment_description}</td>
-  </tr>
+  <div className='commentbox'>
+    <p className='commentname'>{props.comment.comment_name3}</p>
+    <p className='commentdescription'>{props.comment.comment_description3}</p>
+  </div>
 )
 
 export default class CreateComments extends Component {
@@ -16,28 +16,28 @@ export default class CreateComments extends Component {
   constructor(props) {
     super(props);
     //binding state objects to 'this' since we are dealing with methods
-    this.onChangeCommentName = this.onChangeCommentName.bind(this);
-    this.onChangeCommentDescription = this.onChangeCommentDescription.bind(this);
+    this.onChangeCommentName3 = this.onChangeCommentName3.bind(this);
+    this.onChangeCommentDescription3 = this.onChangeCommentDescription3.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
 
     //setting and assigning state
     this.state = {
-      comment_name: '',
-      comment_description: '',
+      comment_name3: '',
+      comment_description3: '',
       comments: []
 
     }
   }
   //methods to update state properties
-  onChangeCommentName(e) {
+  onChangeCommentName3(e) {
     this.setState({
-      comment_name: e.target.value
+      comment_name3: e.target.value
     });
   }
-  onChangeCommentDescription(e) {
+  onChangeCommentDescription3(e) {
     this.setState({
-      comment_description: e.target.value
+      comment_description3: e.target.value
     });
   }
 
@@ -46,20 +46,20 @@ export default class CreateComments extends Component {
     //prevent default submit behavior
     // e.preventDefault();
     console.log(`Form submitted:`);
-    console.log(`Name: ${this.state.comment_name}`);
-    console.log(`Comment Description: ${this.state.comment_description}`);
+    console.log(`Name: ${this.state.comment_name3}`);
+    console.log(`Comment Description: ${this.state.comment_description3}`);
 
     const newComment = {
-      comment_name: this.state.comment_name,
-      comment_description: this.state.comment_description
+      comment_name3: this.state.comment_name3,
+      comment_description3: this.state.comment_description3
     };
     //sending POST request to endpoint using axios, endpoint expects new comment in JSON 
     axios.post('http://localhost:4000/comments/add', newComment)
       .then(res => console.log(res.data))
 
     this.setState({
-      comment_name: '',
-      comment_description: ''
+      comment_name3: '',
+      comment_description3: ''
     })
 
   }
@@ -122,7 +122,7 @@ export default class CreateComments extends Component {
               </div>
             );
           })}
-          <h3>Comments</h3>
+          <h3 className="createcomment">Comments</h3>
           <p> {this.commentList()}</p>
 
           <h3>Create Comment</h3>
@@ -132,16 +132,16 @@ export default class CreateComments extends Component {
               <label>Name:</label>
               <input type="text"
                 className="form-control"
-                value={this.state.comment_name}
-                onChange={this.onChangeCommentName}
+                value={this.state.comment_name3}
+                onChange={this.onChangeCommentName3}
               />
             </div>
             <div className="form-group">
               <label>Comment:</label>
               <input type="text"
                 className="form-control"
-                value={this.state.comment_description}
-                onChange={this.onChangeCommentDescription}
+                value={this.state.comment_description3}
+                onChange={this.onChangeCommentDescription3}
               />
             </div>
             <div className="form-group">
