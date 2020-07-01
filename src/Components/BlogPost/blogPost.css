@@ -27,8 +27,6 @@
   .recent__title {
     border-bottom: black solid;
     max-width: 400px;
-<<<<<<< HEAD
-=======
   }
   .commentname{
     margin-bottom: 0px;
@@ -42,5 +40,4 @@
   }
   .createcomment{
     margin-top: 10spx;
->>>>>>> origin/joseperezbranch
   }
