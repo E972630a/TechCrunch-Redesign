@@ -25,7 +25,7 @@ const connection = mongoose.connection;
 
 
 connection.once('open', function(){
->>>>>>> origin/joseperezbranch
+
     console.log("MongoDB database connection established successfully")
 })
 //adding endpoint delivering all comments
