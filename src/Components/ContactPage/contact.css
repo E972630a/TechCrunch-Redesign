@@ -58,12 +58,60 @@ input[type="submit"]:hover{
   background: rgb(19, 146, 19);
   color: white;
 }
-
+label {
+  width: 100% 
+}  
+  
 .contact {
   background: radial-gradient(circle, rgba(0,165,98,1) 0%, rgba(0,177,0,1) 35%);
   text-align: center;
   margin-top: 5%;
-  margin-bottom: -29%;
+  margin-bottom: -38.2%;
   padding: 10px 0px;
   width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .li__form {
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 20px;
+  }
+  .contact h2 {
+    font-size: medium;
+  }
+  label {
+    width: 100%;
+  }
+  .quickLinks h3 {
+    font-size: 1.7rem;
+  }
+  .quickLinks li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .li__form {
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 20px;
+  }
+  .contact h2 {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 800px) {
+  .li__form {
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: auto;
+    padding: 20px;
+  }
+  .contact h2 {
+    font-size: medium;
+  }
 }
