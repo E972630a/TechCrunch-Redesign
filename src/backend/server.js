@@ -1,5 +1,5 @@
-const dotenv = require("dotenv")
-dotenv.config()
+require('dotenv').config();
+
 //framework for Node.js
 const express = require('express');
 const app = express();
@@ -11,15 +11,15 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const commentRoutes = express.Router()
 const PORT = 4000;
-
 let Comment = require('./comment.model')
+
 
 
 app.use(cors());
 app.use(bodyParser.json());
 
 //connect MongoDB using Mongoose
-mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true,  useUnifiedTopology: true });
+mongoose.connect(process.env.DB_CONNECT, { useNewUrlParser: true,  useUnifiedTopology: true });
 const connection = mongoose.connection;
 
 
